@@ -13,11 +13,10 @@ RUN npm install
 # Copy application code
 COPY . .
 
+# Bind mount points for volumes
+
 # Expose port
 EXPOSE 80
-
-# Define volume mount point
-VOLUME ["/app/feedback"]
 
 # Start the application
 CMD ["node", "server.js"]

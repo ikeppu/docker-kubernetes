@@ -226,6 +226,8 @@ docker build -t myapp:v1.0 .      # Example: Build with name 'myapp' and version
 
 ```bash
 
+docker run -d -p 3000:80  --name feedback-app -v feedback:/app/feedback -v "C:\Work\docker-kubernetes\docker\volume\data-volumes-01-starting-setup:/app" -v /app/node_modules  feedback-node:volume
 
+ docker exec -it 1d3 psql gobank -U user
 
 ```
