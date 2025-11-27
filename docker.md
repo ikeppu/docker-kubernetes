@@ -238,3 +238,69 @@ host.docker.internal
 # Exec comand
 docker run -it node npm init
 ```
+
+# AWS amazon-linux-extras is cli for better install tools
+
+```bash
+sudo amazon-linux-extras install docker
+```
+
+# Kubernetes
+
+```
+kubernetes like docker compose for deployment between multiple machines
+
+```
+
+# Cluster
+
+All of this is cluster
+
+Master Node control workers
+
+```Worker -> VM_1
+Worker node -> VM
+Proxy / Config
+Pod -> Container
+```
+
+```Worker_2 -> VM_2
+Worker node -> VM
+Proxy / Config
+Pod -> Container
+```
+
+```Worker_3 -> VM_3
+Worker node -> VM
+Proxy / Config
+Pod -> Container
+```
+
+# End of Cluster
+
+# Worker Node -> VM
+
+1. pod
+2. pod
+3. pod
+
+# End Of Worker node
+
+# Service
+
+kubectl expose deployment first-app --type=LoadBalancer --port=8080
+minikube service first-app
+
+types
+ClusterIP only inside in cluster
+NodePort expose port outside
+Loadbalancer
+
+# End of service
+
+# Scaling in action
+
+kubectl scale deployment/first-app --replicas=3
+
+Imperative kogda ti piwew rukami komandi
+Declarative kogda u tebja conf files k primeru .yml
